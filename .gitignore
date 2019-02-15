@@ -36,3 +36,6 @@
 .DS_Store
 .idea
 .secret
+
+# Игнорировать файлы Spring
+/spring/*.pid
