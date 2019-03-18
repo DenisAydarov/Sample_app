@@ -1,0 +1,24 @@
+Started
+
+
+Progress: |[0m[1000D[K[31mERROR[0m["test_login_with_invalid_information", Minitest::Result, 2019-03-18 21:42:10 +0400]
+ test_login_with_invalid_information#Minitest::Result (1552930930.63s)
+NoMethodError:         NoMethodError: undefined method `[]' for nil:NilClass
+            app/controllers/sessions_controller.rb:6:in `create'
+            test/integration/users_login_test.rb:12:in `block in <class:UsersLoginTest>'
+        app/controllers/sessions_controller.rb:6:in `create'
+        test/integration/users_login_test.rb:12:in `block in <class:UsersLoginTest>'
+
+[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[0m[1000D[K[31mERROR[0m["test_login_with_valid_information", Minitest::Result, 2019-03-18 21:42:10 +0400]
+ test_login_with_valid_information#Minitest::Result (1552930930.64s)
+NoMethodError:         NoMethodError: undefined method `[]' for nil:NilClass
+            app/controllers/sessions_controller.rb:6:in `create'
+            test/integration/users_login_test.rb:21:in `block in <class:UsersLoginTest>'
+        app/controllers/sessions_controller.rb:6:in `create'
+        test/integration/users_login_test.rb:21:in `block in <class:UsersLoginTest>'
+
+[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m[32m=[0m|
+
+Finished in 0.43554s
+2 tests, 1 assertions, [31m0 failures, 2 errors, [0m[33m0 skips[0m
+]2;[Minitest results] 2 tests
