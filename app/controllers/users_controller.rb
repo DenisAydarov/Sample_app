@@ -19,9 +19,31 @@ class UsersController < ApplicationController
     	end
     end
 
+    def edit
+        @user = User.find(params[:id])
+        if @user.update_attributes(user_params1)
+            #processing successful update
+        else
+            render 'edit'
+        end
+    end
+
+    def update                                    #разобраться с этой хуйней, в тестах users_edit_test запрашивает метод update а патч отсылает на edit
+        @user = User.find(params[:id])
+        if @user.update_attributes(user_params)
+            #processing successful update
+        else
+            render 'edit'
+        end
+    end
+
     private
 
       def user_params
     	  params.require(:user).permit(:name, :email, :password, :password_confirmation)
+      end
+
+      def user_params1                                 #разобраться с этой хуйней, в тестах users_edit_test не работает обычные метод, работает только без require(:user) 
+          params.permit(:name, :email, :password, :password_confirmation)
       end
 end
