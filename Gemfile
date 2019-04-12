@@ -8,6 +8,8 @@ gem 'rails', '~> 5.2.2'
 
 gem 'bcrypt', '3.1.12'
 
+gem 'faker', '1.9.3'
+
 gem 'bootstrap-sass', '3.4.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
